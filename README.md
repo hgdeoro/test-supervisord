@@ -1,11 +1,13 @@
 Steps to reproduce
-------------------
+==================
 
-SETUP
-=====
+Setup
+-----
 
-The Dockerfile will copy the file `authorized_keys` (in the same directory where Dockerfile is) to the container, to allow login using ssh. If you
-don't create a `authorized_keys`, Docker won't be able to create the image.
+The Dockerfile will copy the file `authorized_keys` (in the same directory where Dockerfile is) to the container, to allow login using ssh. If you don't create a `authorized_keys`, Docker won't be able to create the image.
+
+Reproduce
+---------
 
 To reproduce the bug and check the status of supervisord you will need to open 3 terminals.
 
