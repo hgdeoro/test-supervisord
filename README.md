@@ -40,6 +40,8 @@ Now, in the same console, try to stop nginx:
 ![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot03.png)
 
 
+You can see that nginx was stopped:
+
 ![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot04.png)
 
 The previous command never returns the control back to the shell.
