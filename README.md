@@ -64,3 +64,5 @@ You can confirm that the `supervisorctl stop nginx` command worked: in the thirt
 ![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot05.png)
 
 
+
+For more information, see https://github.com/Supervisor/supervisor/issues/131
