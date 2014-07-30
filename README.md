@@ -45,11 +45,12 @@ Now, in the same console, try to stop nginx:
 ![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot03.png)
 
 
+The previous command never returns the control back to the shell.
+
 You can see that nginx was stopped:
 
 ![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot04.png)
 
-The previous command never returns the control back to the shell.
 
 You can confirm that the `supervisorctl stop nginx` command worked: in the thirth console, enter the docker image and check the status:
 
