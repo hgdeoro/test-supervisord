@@ -19,6 +19,9 @@ In the first console, build the docker image and launch the container
     2014-07-30 23:14:27,188 INFO spawned: 'nginx' with pid 10
     2014-07-30 23:14:27,191 INFO spawned: 'sshd' with pid 11
 
+![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot01.png)
+
+
 In the sencond console, login and check the supervisor status (this works fine)
 
     $ ssh -p 20022 user@localhost
@@ -28,9 +31,16 @@ In the sencond console, login and check the supervisor status (this works fine)
     sshd           RUNNING    pid 11, uptime 0:01:13
     $
 
+![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot02.png)
+
 Now, in the same console, try to stop nginx:
 
     $ supervisorctl stop nginx
+
+![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot03.png)
+
+
+![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot04.png)
 
 The previous command never returns the control back to the shell.
 
@@ -42,4 +52,7 @@ You can confirm that the `supervisorctl stop nginx` command worked: in the thirt
     nginx          STOPPED    Jul 30 11:17 PM
     sshd           RUNNING    pid 11, uptime 0:04:18
     $
+
+![Screenshot](https://raw.githubusercontent.com/hgdeoro/test-supervisord/master/screenshot05.png)
+
 
